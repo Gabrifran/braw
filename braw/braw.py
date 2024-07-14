@@ -49,7 +49,8 @@ class Braw():
 	#Gui		
 	def braw(self,main):
 			main.setGeometry(QtCore.QRect(0,0,1038,736))
-			self.imf=[QtGui.QPixmap(f'{(path.dirname(path.abspath(__file__))).replace('\\','/')}/img/Fundo.jpg'),QtGui.QPixmap(f'{path.dirname(path.abspath(__file__))}/img/none.png')]
+			self.imf=[QtGui.QPixmap(f"{(path.dirname(path.abspath(__file__))).replace('\\','/')}/img/Fundo.jpg")
+   ,QtGui.QPixmap(f'{path.dirname(path.abspath(__file__))}/img/none.png')]
 			self.fun=QtWidgets.QLabel(main)
 			self.fun.setPixmap(self.imf[0])
 			self.fun.setGeometry(QtCore.QRect(0,0,1038,736))
