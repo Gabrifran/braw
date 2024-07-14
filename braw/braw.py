@@ -136,7 +136,7 @@ class Braw():
 			self.selp1.setFont(self.font1)
 			for f,oe,o in walk(path.dirname(path.abspath(__file__))+'\\img or\\po'):
 				for ors in o:
-					self.selp1.addItem(f'{(ors).replace('.webp','')}')
+					self.selp1.addItem(ors.replace('.webp',''))
 			self.selp1.setStyleSheet('''QListWidget::item{
 											border:0 px solid;
 							
