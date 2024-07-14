@@ -147,7 +147,7 @@ class Braw():
 			self.selp2.addItem('none')
 			for f,oe,o in walk(path.dirname(path.abspath(__file__))+'\\img or\\po'):
 				for ors in o:
-					self.selp2.addItem(f'{(ors).replace('.webp','')}')
+					self.selp2.addItem(ors.replace('.webp',''))
 			self.selp2.setStyleSheet('''QListWidget::item{
 											border:0 px solid;
 							
@@ -158,7 +158,7 @@ class Braw():
 			self.selp3.addItem('none')
 			for f,oe,o in walk(path.dirname(path.abspath(__file__))+'\\img or\\po'):
 				for ors in o:
-					self.selp3.addItem(f'{(ors).replace('.webp','')}')
+					self.selp3.addItem((ors).replace('.webp',''))
 			self.selp3.setStyleSheet('''QListWidget::item{
 											border:0 px solid;
 							
