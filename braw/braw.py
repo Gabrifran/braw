@@ -45,19 +45,19 @@ class Braw():
 					self.le.write('\n'+h['alt'])
 			self.browser.close()
 			self.le.close()
-			
+
 	#Gui		
 	def braw(self,main):
 			main.setGeometry(QtCore.QRect(0,0,1038,736))
-			self.imf=[QtGui.QPixmap(f"{(path.dirname(path.abspath(__file__))).replace('\\','/')}/img/Fundo.jpg")
-   ,QtGui.QPixmap(f'{path.dirname(path.abspath(__file__))}/img/none.png')]
+			self.imf=[QtGui.QPixmap(f"{(path.dirname(path.abspath(__file__))).replace('\\','/')}/img/Fundo.jpg"),
+			QtGui.QPixmap(f'{path.dirname(path.abspath(__file__))}/img/none.png')]
 			self.fun=QtWidgets.QLabel(main)
 			self.fun.setPixmap(self.imf[0])
 			self.fun.setGeometry(QtCore.QRect(0,0,1038,736))
 			main.setMaximumSize(1038,736)
 			main.setMinimumSize(1038,736)
 			self.per=QtWidgets.QLabel(main)
-			self.per.setPixmap(QtGui.QPixmap(f'{(path.dirname(path.abspath(__file__))).replace('\\','/')}/img/ger.png'))
+			self.per.setPixmap(QtGui.QPixmap(f"{(path.dirname(path.abspath(__file__))).replace('\\','/')}/img/ger.png"))
 			self.per.setScaledContents(True)
 			self.per.setGeometry(QtCore.QRect(450,0,600,400))
 			self.p1=QtWidgets.QLabel(main)
@@ -119,7 +119,7 @@ class Braw():
 						   					text-align: justify;
 						   					padding-top: 55px;	
 						   }''')
-	
+
 			self.pln2=QtWidgets.QLabel(main)
 			self.pln2.setGeometry(QtCore.QRect(750,-150,500,500))
 			self.pln2.setFont(self.font1)
